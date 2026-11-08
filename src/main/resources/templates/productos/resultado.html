@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}">Resultado</title>
+    <style>body { font-family: sans-serif; margin: 30px; }</style>
+</head>
+<body>
+    <h1 th:text="${titulo}"></h1>
+    <p>Datos capturados mediante <strong>@ModelAttribute</strong>:</p>
+    <ul>
+        <li><strong>ID Asignado:</strong> <span th:text="${producto.id}"></span></li>
+        <li><strong>Nombre:</strong> <span th:text="${producto.nombre}"></span></li>
+        <li><strong>Precio:</strong> $<span th:text="${producto.precio}"></span></li>
+        <li><strong>Categoría:</strong> <span th:text="${producto.categoria}"></span></li>
+    </ul>
+    <p><a th:href="@{/productos/lista}">Ver en el listado general</a></p>
+</body>
+</html>

@@ -18,7 +18,7 @@ public class InfoController {
         Map<String, String> datos = new HashMap<>();
         datos.put("proyecto", "actividad1_t4");
         datos.put("estudiante", "Fredy");
-        datos.put("estado", "Desarrollo local");
+        datos.put("estado", "Desarrollanding");
         return datos;
     }
 
